@@ -1,0 +1,7 @@
+roslaunch mie443_contest2 turtlebot_world.launch world:=practice
+
+roslaunch turtlebot_gazebo amcl_demo.launch map_file:=/home/turtlebot/catkin_ws/src/mie443_contest2/maps/map_practice.yaml
+
+roslaunch turtlebot_rviz_launchers view_navigation.launch
+
+rosservice call /move_base/clear_costmaps
